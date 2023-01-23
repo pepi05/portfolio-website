@@ -9,24 +9,27 @@ const Projects = () => {
     {
       projectName: "Cassandra Link",
       projectImage: cLinkImage,
-      projectUrl: "https://cassandra.link/",
+      originalProjectLink: "https://cassandra.link/",
+      projectUrl: "/cassandra-link",
       projectLanguage: "Gatsby JS",
     },
     {
       projectName: "Cassandra Tools",
       projectImage: cToolsImage,
-      projectUrl: "https://cassandra.tools/",
+      originalProjectLink: "https://cassandra.tools/",
+      projectUrl: "/cassandra-tools",
       projectLanguage: "Gatsby JS",
     },
     {
       projectName: "Anant MK (In Progress...)",
       projectImage: anantMkImage,
-      projectUrl: "https://anant-5fbpggvol-anantmk.vercel.app/",
+      originalProjectLink: "https://anant-5fbpggvol-anantmk.vercel.app/",
+      projectUrl: "/anantmk",
       projectLanguage: "Next JS",
     },
   ];
   return (
-    <div className=" w-full">
+    <div id="projects" className=" w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#6561e5]">
           Projects
@@ -35,12 +38,15 @@ const Projects = () => {
         <div className=" grid md:grid-cols-2 gap-8">
           {myProjects.map((project) => {
             return (
-              <ProjectItem
-                title={project.projectName}
-                backgroundImg={project.projectImage}
-                projectUrl={project.projectUrl}
-                projectLanguage={project.projectLanguage}
-              />
+              <div key={project.projectName}>
+                <ProjectItem
+                  title={project.projectName}
+                  backgroundImg={project.projectImage}
+                  originalProjectLink={project.originalProjectLink}
+                  projectUrl={project.projectUrl}
+                  projectLanguage={project.projectLanguage}
+                />
+              </div>
             );
           })}
         </div>
