@@ -12,12 +12,11 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
-            I am petar. Simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            I am Petar Full-Stack Web developer. I have a strong foundation in
+            computer science concepts and an in-depth understanding of
+            JavaScript, making me a valuable asset to any team. I am always
+            seeking to improve my skills and stay up-to-date with the latest
+            developments in the field.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out some of my latest project.
