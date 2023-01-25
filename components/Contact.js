@@ -1,13 +1,59 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import contactImage from "../public/contact.jpg";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const form = useRef();
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`,
+        `${process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID}`,
+        form.current,
+        `${process.env.NEXT_PUBLIC_EMAILJS_USER_ID}`
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -36,18 +82,32 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/petar-gjuzelov-589720219/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/pepi05"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </a>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <AiOutlineMail />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
+                  <Link href="/my-info">
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <BsFillPersonLinesFill />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -56,13 +116,16 @@ const Contact = () => {
           {/* right side */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form ref={form} onSubmit={handleSubmit}>
                 <div className=" grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className=" uppercase text-sm py-2">Name</label>
                     <input
                       className=" border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="flex flex-col">
@@ -72,6 +135,9 @@ const Contact = () => {
                     <input
                       className=" border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -80,6 +146,9 @@ const Contact = () => {
                   <input
                     className=" border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -87,6 +156,9 @@ const Contact = () => {
                   <input
                     className=" border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="flex flex-col py-2">
@@ -94,6 +166,9 @@ const Contact = () => {
                   <textarea
                     className=" border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
