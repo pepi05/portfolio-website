@@ -24,7 +24,7 @@ const Projects = () => {
       projectName: "Anant MK (In Progress...)",
       projectImage: anantMkImage,
       originalProjectLink: "https://anant-5fbpggvol-anantmk.vercel.app/",
-      projectUrl: "/anantmk",
+      projectUrl: "/anant-mk",
       projectLanguage: "Next JS",
     },
   ];

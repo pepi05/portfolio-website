@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import cassandraLinkImage from "../public/cLinkImage.png";
+import cassandraToolsImage from "../public/cToolsImage.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const cassandraLink = () => {
+const cassandraTools = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,11 +13,11 @@ const cassandraLink = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="contain"
-          src={cassandraLinkImage}
+          src={cassandraToolsImage}
           alt="clImage"
         />
         <div className=" absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className=" py-2">Cassandra Link</h2>
+          <h2 className=" py-2">Cassandra Tools</h2>
           <h3>Gatsby JS / GraphQL / Algolia / Material UI</h3>
         </div>
       </div>
@@ -26,15 +26,16 @@ const cassandraLink = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Cassandra.Link is a knowledge base with videos, articles and open
-            source projects to help apache cassandra developers, administrators
-            and architects. Our mission here was to Focus on improving the
-            visual appearance of this website. So, we started with redesigning
-            the cards throughout the website, we reorganized the content into a
-            better and more intuitive layout, made some other small adjustments
-            so the users can enjoy the site while learning and contributing.
+            Cassandra.Tools is a collection of enhancers to help developers,
+            administrators, and architects when working with Apache Cassandra.
+            The goal and purpose for this project were clear, to design more
+            suitable User Interface, while enhancing the User Experience. So, we
+            did exactly that. Some card design improvement, filter dropdowns
+            redesigned and few other changes add much greater feeling when using
+            this Website. For this, as well as for all the other projects, we
+            iterate constantly in order to get to a perfection.
           </p>
-          <a href="https://cassandra.link/" target="_blank" rel="noreferrer">
+          <a href="https://cassandra.tools/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Visit Site</button>
           </a>
         </div>
@@ -65,4 +66,4 @@ const cassandraLink = () => {
   );
 };
 
-export default cassandraLink;
+export default cassandraTools;
