@@ -26,14 +26,15 @@ const cassandraTools = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Cassandra.Tools is a collection of enhancers to help developers,
-            administrators, and architects when working with Apache Cassandra.
-            The goal and purpose for this project were clear, to design more
-            suitable User Interface, while enhancing the User Experience. So, we
-            did exactly that. Some card design improvement, filter dropdowns
-            redesigned and few other changes add much greater feeling when using
-            this Website. For this, as well as for all the other projects, we
-            iterate constantly in order to get to a perfection.
+            Cassandra.Tools is a collection of enhancers designed to aid
+            developers, administrators, and architects when working with Apache
+            Cassandra. Built with Gatsby JS and utilizing data from GraphQL
+            queries, this project offers enhanced functionality and improved
+            user experience. The implementation of Algolia for filtering and
+            Material UI for design components further enhances the functionality
+            and usability of this tool. Whether you're a seasoned Cassandra
+            expert or just starting out, Cassandra.Tools is a must-have tool for
+            streamlining your workflow and increasing productivity
           </p>
           <a href="https://cassandra.tools/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Visit Site</button>
