@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
-import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -69,15 +68,18 @@ const Contact = () => {
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={contactImage}
+                  alt="contact"
                 />
               </div>
               <div>
                 <h2 className="py-2">Petar Gjuzelov</h2>
-                <p>Front-End Developer</p>
+                <p>Full-Stack Developer</p>
                 <p className="py-4">
                   I am available for full-time positions. Contact me and let's
                   talk.
                 </p>
+                <p className="py-2">Email: pepi_guzelov@hotmail.com</p>
+                <p className="py-2">Telephone: +389-70-355-951</p>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect with me</p>
@@ -100,9 +102,6 @@ const Contact = () => {
                       <FaGithub />
                     </div>
                   </a>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
                   <Link href="/my-info">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <BsFillPersonLinesFill />

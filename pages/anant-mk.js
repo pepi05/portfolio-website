@@ -26,11 +26,18 @@ const anantMk = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Anant Mk is an official site of the Anant Macedonia Corporation. Our
-            mission here was to build official website with Next JS from zero.
-            More precisely, we have designed and implemented custom UI for all
-            of The pages. This project is still in the building process and it's
-            not finished.
+            This project utilizes Next.js, a popular JavaScript framework for
+            building server-rendered React applications, as its frontend. The
+            backend is powered by a headless WordPress installation, which
+            serves as a content management system. Data is retrieved from the
+            WordPress backend using GraphQL queries, allowing for efficient and
+            flexible data retrieval. The project is designed to create a
+            seamless experience for the user, with the added flexibility and
+            scalability provided by a headless CMS. Anant Mk is an official site
+            of the Anant Macedonia Corporation. Our mission here was to build
+            official website with Next JS from zero. More precisely, we have
+            designed and implemented custom UI for all of The pages. This
+            project is still in the building process and it's not finished.
           </p>
           <a
             href="https://anant-5fbpggvol-anantmk.vercel.app/"
