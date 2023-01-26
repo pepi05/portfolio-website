@@ -101,7 +101,7 @@ const myInfo = () => {
               using modern techniques with SCSS
             </li>
             <li>Backend development using NodeJS/Express</li>
-            <li>Worked on company's project "Space Logo"</li>
+            <li>Worked on company&apos;s project &quot;Space Logo&quot;</li>
           </ul>
         </div>
 

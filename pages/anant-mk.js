@@ -37,7 +37,7 @@ const anantMk = () => {
             of the Anant Macedonia Corporation. Our mission here was to build
             official website with Next JS from zero. More precisely, we have
             designed and implemented custom UI for all of The pages. This
-            project is still in the building process and it's not finished.
+            project is still in the building process and it&apos;s not finished.
           </p>
           <a
             href="https://anant-5fbpggvol-anantmk.vercel.app/"

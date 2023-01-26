@@ -41,12 +41,12 @@ const cassandraLink = () => {
             filtering. This powerful search tool allows users to easily find the
             resources they need by keyword, making it easy to find the exact
             information they need, even among the vast amount of resources
-            available on the website. Whether you're a seasoned Cassandra
+            available on the website. Whether you&apos;re a seasoned Cassandra
             developer, administrator, or architect, or just starting out,
             Cassandra.Link is an invaluable resource that is sure to help you
             take your skills and knowledge to the next level. With a wide range
-            of resources and a user-friendly design, it's the perfect place to
-            learn about and stay up to date on all things Apache Cassandra.
+            of resources and a user-friendly design, it&apos;s the perfect place
+            to learn about and stay up to date on all things Apache Cassandra.
           </p>
           <a href="https://cassandra.link/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Visit Site</button>

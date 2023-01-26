@@ -32,7 +32,7 @@ const cassandraTools = () => {
             queries, this project offers enhanced functionality and improved
             user experience. The implementation of Algolia for filtering and
             Material UI for design components further enhances the functionality
-            and usability of this tool. Whether you're a seasoned Cassandra
+            and usability of this tool. Whether you&apos;re a seasoned Cassandra
             expert or just starting out, Cassandra.Tools is a must-have tool for
             streamlining your workflow and increasing productivity
           </p>

@@ -75,8 +75,8 @@ const Contact = () => {
                 <h2 className="py-2">Petar Gjuzelov</h2>
                 <p>Full-Stack Developer</p>
                 <p className="py-4">
-                  I am available for full-time positions. Contact me and let's
-                  talk.
+                  I am available for full-time positions. Contact me and
+                  let&apos;s talk.
                 </p>
                 <p className="py-2">Email: pepi_guzelov@hotmail.com</p>
                 <p className="py-2">Telephone: +389-70-355-951</p>
