@@ -79,7 +79,7 @@ const Contact = () => {
                   let&apos;s talk.
                 </p>
                 <p className="py-2">Email: pepi_guzelov@hotmail.com</p>
-                <p className="py-2">Telephone: +389-70-355-951</p>
+                <p className="py-2">Telephone: +389-78-355-951</p>
               </div>
               <div>
                 <p className="uppercase pt-8">Connect with me</p>
