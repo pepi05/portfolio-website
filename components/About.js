@@ -13,7 +13,7 @@ const About = () => {
           </p>
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
-            I am Petar Full-Stack Web developer. As a motivated software
+            I am Petar Front-End React developer. As a motivated software
             engineer, I am well-equipped to tackle any project that comes my
             way. I have a strong foundation in computer science concepts and an
             in-depth understanding of JavaScript, making me a valuable asset to
@@ -26,7 +26,7 @@ const About = () => {
           </p>
           <Link href="#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
-              Check out some of my latest project.
+              Check out some of my professional projects at work.
             </p>
           </Link>
         </div>

@@ -15,11 +15,14 @@ const Main = () => {
           <h1 className=" py-4 text-gray-700">
             Hi, I am <span className="text-[#5651e5]">Petar</span>
           </h1>
-          <h1 className=" py-4 text-gray-700">A Full-stack web developer</h1>
+          <h1 className=" py-4 text-gray-700">A Front-End React developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto ">
-            I am Full-stack web developer specializing in building exceptional
-            digital experiences. Currently, I am focused on building responsive
-            front-end web application with React.
+            Skilled front-end developer with 1 year of professional work
+            experience creating user-friendly and visually appealing websites. I
+            am passionate about creating seamless user experiences that drive
+            engagement and conversions. Currently, I am focused on building
+            responsive front-end web application with React. Take a look at my
+            portfolio to see some of my latest projects.
           </p>
           <div className=" flex items-center justify-between max-w-[330px] m-auto py-4">
             <a
