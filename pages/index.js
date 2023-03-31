@@ -5,8 +5,62 @@ import Contact from "../components/Contact";
 import Main from "../components/Main";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import cLinkImage from "../public/cLinkImage.png";
+import cToolsImage from "../public/cToolsImage.png";
+import anantMkImage from "../public/anant-mk2.png";
+import anantUsImage from "../public/anantUsImage.png";
+import financesImage from "../public/financesImage.jpg";
+import todoImage from "../public/todoImage.png";
 
 export default function Home() {
+  const workProjects = [
+    {
+      projectName: "Cassandra Link",
+      projectImage: cLinkImage,
+      originalProjectLink: "https://cassandra.link/",
+      projectUrl: "/cassandra-link",
+      projectLanguage: "Gatsby JS",
+    },
+    {
+      projectName: "Cassandra Tools",
+      projectImage: cToolsImage,
+      originalProjectLink: "https://cassandra.tools/",
+      projectUrl: "/cassandra-tools",
+      projectLanguage: "Gatsby JS",
+    },
+    {
+      projectName: "Anant MK (In Progress...)",
+      projectImage: anantMkImage,
+      originalProjectLink: "https://anant-5fbpggvol-anantmk.vercel.app/",
+      projectUrl: "/anant-mk",
+      projectLanguage: "Next JS",
+    },
+    {
+      projectName:
+        "Anant US (Built in wordpress / In Progress version with Next.js...)",
+      projectImage: anantUsImage,
+      originalProjectLink: "https://anant.us/",
+      projectUrl: "/anant-us",
+      projectLanguage: "Wordpress / New version with Next.js",
+    },
+  ];
+
+  const trainingProjects = [
+    {
+      projectName: "Todo Application",
+      projectImage: todoImage,
+      originalProjectLink: "https://petar-todo.netlify.app/",
+      projectUrl: "/todo",
+      projectLanguage: "Gatsby JS",
+    },
+    {
+      projectName: "Finance Tracking Application",
+      projectImage: financesImage,
+      originalProjectLink: "https://finances-app-rtk.vercel.app/",
+      projectUrl: "/finances-app",
+      projectLanguage: "Gatsby JS",
+    },
+  ];
   return (
     <div>
       <Head>
@@ -17,7 +71,11 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
-      <Projects />
+      <Projects
+        projects={workProjects}
+        title="Professional Project Experience"
+      />
+      <Projects projects={trainingProjects} title="Latest Training Projects" />
       <Contact />
     </div>
   );
