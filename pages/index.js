@@ -29,9 +29,9 @@ export default function Home() {
       projectLanguage: "Gatsby JS",
     },
     {
-      projectName: "Anant MK (In Progress...)",
+      projectName: "Anant MK",
       projectImage: anantMkImage,
-      originalProjectLink: "https://anant-5fbpggvol-anantmk.vercel.app/",
+      originalProjectLink: "https://www.anantmk.com/",
       projectUrl: "/anant-mk",
       projectLanguage: "Next JS",
     },
@@ -51,14 +51,14 @@ export default function Home() {
       projectImage: todoImage,
       originalProjectLink: "https://petar-todo.netlify.app/",
       projectUrl: "/todo",
-      projectLanguage: "Gatsby JS",
+      projectLanguage: "React JS",
     },
     {
       projectName: "Finance Tracking Application",
       projectImage: financesImage,
       originalProjectLink: "https://finances-app-rtk.vercel.app/",
       projectUrl: "/finances-app",
-      projectLanguage: "Gatsby JS",
+      projectLanguage: "React JS and Redux Toolkit",
     },
   ];
   return (
