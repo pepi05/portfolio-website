@@ -34,7 +34,7 @@ const gpt = () => {
           <p className=" mb-2">
             GPT is a dynamic and visually appealing React application that has
             been implemented based on a meticulously designed Figma layout. This
-            project utilizes React's functional components, promoting code
+            project utilizes React`&apos;` functional components, promoting code
             reusability and maintainability throughout the application.
           </p>
 

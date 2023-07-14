@@ -30,9 +30,9 @@ const gym = () => {
           <p className=" mb-2">
             The Fitness Exercises Application offers a seamless experience,
             allowing users to effortlessly explore exercises categorized by
-            muscle groups, and equipment requirements. Whether you're a beginner
-            or an advanced fitness enthusiast, this app has something for
-            everyone.
+            muscle groups, and equipment requirements. Whether you`&apos;`re a
+            beginner or an advanced fitness enthusiast, this app has something
+            for everyone.
           </p>
 
           <a
