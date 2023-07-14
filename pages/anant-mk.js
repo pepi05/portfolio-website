@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const anantMk = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <div className="w-screen h-[50vh] relative">
         <div className=" absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image
@@ -14,7 +14,7 @@ const anantMk = () => {
           layout="fill"
           objectFit="contain"
           src={anantMkImage}
-          alt="clImage"
+          alt="anantmk"
         />
         <div className=" absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className=" py-2">Anant MK</h2>
@@ -39,11 +39,7 @@ const anantMk = () => {
             designed and implemented custom UI for all of The pages. This
             project is still in the building process and it&apos;s not finished.
           </p>
-          <a
-            href="https://anant-5fbpggvol-anantmk.vercel.app/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://www.anantmk.com/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Visit Site</button>
           </a>
         </div>
