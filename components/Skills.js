@@ -87,7 +87,7 @@ const Skills = () => {
             return (
               <div
                 key={skill.name}
-                className=" p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"
+                className=" p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 flex justify-center items-center"
               >
                 <div className=" grid grid-cols-2 gap-4 justify-center items-center">
                   <div className=" m-auto">
