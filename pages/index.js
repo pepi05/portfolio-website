@@ -11,6 +11,9 @@ import anantMkImage from "../public/anant-mk2.png";
 import anantUsImage from "../public/anantUsImage.png";
 import financesImage from "../public/financesImage.jpg";
 import todoImage from "../public/todoImage.png";
+import youtubeImage from "../public/videotube.png";
+import gymImage from "../public/gym.png";
+import gptImage from "../public/gpt.png";
 
 export default function Home() {
   const workProjects = [
@@ -47,18 +50,39 @@ export default function Home() {
 
   const trainingProjects = [
     {
-      projectName: "Todo Application",
-      projectImage: todoImage,
-      originalProjectLink: "https://petar-todo.netlify.app/",
-      projectUrl: "/todo",
-      projectLanguage: "React JS",
-    },
-    {
       projectName: "Finance Tracking Application",
       projectImage: financesImage,
       originalProjectLink: "https://finances-app-rtk.vercel.app/",
       projectUrl: "/finances-app",
       projectLanguage: "React JS and Redux Toolkit",
+    },
+    {
+      projectName: "Youtube Clone Application",
+      projectImage: youtubeImage,
+      originalProjectLink: "https://petar-youtube.netlify.app/",
+      projectUrl: "/youtube",
+      projectLanguage: "React JS, Material-UI and Rapid API",
+    },
+    {
+      projectName: "Gym Exercise Application",
+      projectImage: gymImage,
+      originalProjectLink: "https://petar-gym.netlify.app/",
+      projectUrl: "/gym",
+      projectLanguage: "React JS, Material-UI and Rapid API",
+    },
+    {
+      projectName: "GPT website",
+      projectImage: gptImage,
+      originalProjectLink: "https://gpt-petar.netlify.app/",
+      projectUrl: "/gpt",
+      projectLanguage: "React JS",
+    },
+    {
+      projectName: "Todo Application",
+      projectImage: todoImage,
+      originalProjectLink: "https://petar-todo.netlify.app/",
+      projectUrl: "/todo",
+      projectLanguage: "React JS",
     },
   ];
   return (

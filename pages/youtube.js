@@ -1,10 +1,10 @@
 import React from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
-import financeImage from "../public/finances1.png";
+import youtubeImage from "../public/videotube.png";
 import Link from "next/link";
 import Image from "next/image";
 
-const todo = () => {
+const youtube = () => {
   return (
     <div className="w-full overflow-hidden">
       <div className="w-screen h-[50vh] relative">
@@ -12,14 +12,14 @@ const todo = () => {
         <Image
           className="absolute z-1"
           layout="fill"
-          src={financeImage}
-          alt="finance"
+          src={youtubeImage}
+          alt="youtube"
         />
         <div className=" absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className=" py-2">Finance Tracking Application</h2>
+          <h2 className=" py-2">Youtube Clone Application</h2>
           <h3>React JS </h3>
-          <h3>Redux Toolkit </h3>
-          <h3>Tailwind CSS </h3>
+          <h3>Material-UI </h3>
+          <h3>Rapid API </h3>
         </div>
       </div>
       <div className=" max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
@@ -27,26 +27,14 @@ const todo = () => {
           <p>Project</p>
           <h2 className=" my-2">Overview</h2>
           <p className=" mb-2">
-            The goal of this project is to create a web application that allows
-            users to easily track their income and expenses. The application
-            will be built using React and Redux Toolkit, which will provide a
-            scalable and efficient solution for state management. The
-            application will have a user-friendly interface that allows users to
-            add, edit, and delete their income and expenses. Users will be able
-            to categorize their transactions and view detailed reports.
-          </p>
-          <p>
-            The project will be divided into several components, including a
-            user register/login, a transaction input form, a dashboard for
-            visualizing income and expenses Overall, the goal of this project is
-            to provide users with a simple and effective tool for managing their
-            finances. By leveraging the power of React and Redux Toolkit, we aim
-            to create a fast, reliable, and user-friendly application that helps
-            users take control of their financial lives.
+            This application allows users to search for and watch YouTube videos
+            directly within the app. The user interface is designed using the
+            Material-UI library, providing a modern and sleek look and feel. The
+            app utilizes the YouTube Rapid Data API to retrieve video data.
           </p>
 
           <a
-            href="https://finances-app-rtk.vercel.app/"
+            href="https://petar-youtube.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -61,10 +49,10 @@ const todo = () => {
                 <RiRadioButtonFill className=" pr-1" /> React Js
               </p>
               <p className=" text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className=" pr-1" /> Redux Toolkit
+                <RiRadioButtonFill className=" pr-1" /> Material-UI
               </p>
               <p className=" text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className=" pr-1" /> Tailwind CSS
+                <RiRadioButtonFill className=" pr-1" /> Rapid API
               </p>
             </div>
           </div>
@@ -77,4 +65,4 @@ const todo = () => {
   );
 };
 
-export default todo;
+export default youtube;
