@@ -59,7 +59,7 @@ const gpt = () => {
           </p>
 
           <a
-            href="https://petar-youtube.netlify.app/"
+            href="https://gpt-petar.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
